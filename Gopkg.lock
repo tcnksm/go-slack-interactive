@@ -1,0 +1,19 @@
+memo = "5c937e881b209526d957519d68a378bab69b02fcb3ce6c0170f88e3edaffe2b9"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/kelseyhightower/envconfig"
+  packages = ["."]
+  revision = "b6fde1625d631a48340817849a547164f395d9eb"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/nlopes/slack"
+  packages = ["."]
+  revision = "72d15a0fc0b773a59c00f78b9e7d97eeb8c4281f"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/net"
+  packages = ["websocket"]
+  revision = "84f0e6f92b10139f986b1756e149a7d9de270cdc"
