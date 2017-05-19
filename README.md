@@ -17,11 +17,14 @@ export VERIFICATION_TOKEN="***"  // you can get this after enable interactive me
 export CHANNEL_ID="C***"         // bot reacts only this channel
 ```
 
-For local development, use `ngrok` (See more about it [here](https://api.slack.com/tutorials/tunneling-with-ngrok)). 
+To run this, 
 
 ```bash
+$ dep ensure
 $ go build -o bot && ./bot
 ```
+
+To run this local, use `ngrok` (See more about it [here](https://api.slack.com/tutorials/tunneling-with-ngrok)) and set it for interactive message requests endpoint.
 
 ## References
 
