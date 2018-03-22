@@ -44,9 +44,9 @@ func (s *SlackListener) ListenAndResponse() {
 func (s *SlackListener) handleMessageEvent(ev *slack.MessageEvent) error {
 	// Only response in specific channel. Ignore else.
 	if ev.Channel != s.channelID {
-		log.Printf("%s %s", ev.Channel, ev.Msg.Text)
 		return nil
 	}
+	log.Printf("%s %s", ev.Channel, ev.Msg.Text)
 
 	// Only response mention to bot. Ignore else.
 	if !strings.HasPrefix(ev.Msg.Text, fmt.Sprintf("<@%s> ", s.botID)) {
